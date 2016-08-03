@@ -1,0 +1,33 @@
+//
+//  FyshPch.pch
+//  Fysh
+//
+//  Created by QUAN on 16/7/14.
+//  Copyright © 2016年 QUAN. All rights reserved.
+//
+
+#ifndef FyshPch_pch
+#define FyshPch_pch
+#ifdef __OBJC__
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define RGBA(A, B, C, D) [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:D/1.0]
+
+#define kScreenWidth        [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight       [UIScreen mainScreen].bounds.size.height
+
+#define kAppDelegate [[UIApplication sharedApplication]delegate]
+
+#import <CoreBluetooth/CoreBluetooth.h>
+
+#import "SVProgressHUD.h"
+
+#import "UIView+Extension.h"
+
+#import "AppDelegate.h"
+
+#import "FyshModel.h"
+
+#endif
+#endif /* FyshPch_pch */

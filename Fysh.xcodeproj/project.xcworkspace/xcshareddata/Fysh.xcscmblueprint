@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "39cb385f-78d4-c646-aab3-cc5268424118++7580",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "39cb385f-78d4-c646-aab3-cc5268424118++7580" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "39cb385f-78d4-c646-aab3-cc5268424118++7580" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "054027C4-C000-4DF0-B318-BA71779B4988",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "39cb385f-78d4-c646-aab3-cc5268424118++7580" : "FYSH\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Fysh",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Fysh.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/www.femtoapps.cn:3888\/svn\/ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "39cb385f-78d4-c646-aab3-cc5268424118++7580"
+    }
+  ]
+}

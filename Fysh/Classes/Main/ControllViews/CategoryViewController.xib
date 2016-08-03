@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController">
+            <connections>
+                <outlet property="CategoryView" destination="PA7-bG-IqX" id="D3r-JB-D2g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PA7-bG-IqX">
+                    <rect key="frame" x="0.0" y="24" width="320" height="374"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QA3-Xu-k6m">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="y3O-EP-rEW"/>
+                        <outlet property="delegate" destination="-1" id="ebY-iH-Jt5"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piU-8w-DmJ">
+                    <rect key="frame" x="0.0" y="398" width="320" height="170"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWs-JI-Dl8">
+                            <rect key="frame" x="113" y="69" width="93" height="93"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="93" id="KQx-TY-TMj"/>
+                                <constraint firstAttribute="height" constant="93" id="dmP-Ay-e38"/>
+                            </constraints>
+                            <state key="normal" image="camera.png"/>
+                            <connections>
+                                <action selector="clickTakePhoto:" destination="-1" eventType="touchUpInside" id="RYI-7e-HPB"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvH-dg-8TN">
+                            <rect key="frame" x="125" y="130" width="68" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="68" id="OJz-CS-COd"/>
+                                <constraint firstAttribute="height" constant="21" id="liO-FM-UJ4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cannot find the right icon? Add a personal image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4v-go-nhp">
+                            <rect key="frame" x="60" y="0.0" width="200" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="I75-vJ-Ki3"/>
+                                <constraint firstAttribute="width" constant="200" id="Toa-Lk-lx5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="jvH-dg-8TN" firstAttribute="centerX" secondItem="QWs-JI-Dl8" secondAttribute="centerX" id="HPS-Rs-Efm"/>
+                        <constraint firstItem="QWs-JI-Dl8" firstAttribute="centerX" secondItem="piU-8w-DmJ" secondAttribute="centerX" id="RHu-r7-JwJ"/>
+                        <constraint firstAttribute="height" constant="170" id="b4E-9f-AAG"/>
+                        <constraint firstAttribute="bottom" secondItem="jvH-dg-8TN" secondAttribute="bottom" constant="19" id="iIq-WG-amb"/>
+                        <constraint firstItem="d4v-go-nhp" firstAttribute="top" secondItem="piU-8w-DmJ" secondAttribute="top" id="ilI-Oo-UqK"/>
+                        <constraint firstAttribute="bottom" secondItem="QWs-JI-Dl8" secondAttribute="bottom" constant="8" id="rFw-q7-rrU"/>
+                        <constraint firstItem="d4v-go-nhp" firstAttribute="centerX" secondItem="piU-8w-DmJ" secondAttribute="centerX" id="wIc-0M-H2J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="piU-8w-DmJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Ad-IK-LyB"/>
+                <constraint firstAttribute="bottom" secondItem="piU-8w-DmJ" secondAttribute="bottom" id="KpH-6W-Hca"/>
+                <constraint firstAttribute="trailing" secondItem="piU-8w-DmJ" secondAttribute="trailing" id="Vzj-vA-PnJ"/>
+                <constraint firstItem="PA7-bG-IqX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bWj-An-i9d"/>
+                <constraint firstAttribute="trailing" secondItem="PA7-bG-IqX" secondAttribute="trailing" id="i8U-Jl-dVG"/>
+                <constraint firstItem="piU-8w-DmJ" firstAttribute="top" secondItem="PA7-bG-IqX" secondAttribute="bottom" id="jgr-0w-s5I"/>
+                <constraint firstItem="PA7-bG-IqX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="jt7-Fv-EMg"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera.png" width="93" height="93"/>
+    </resources>
+</document>

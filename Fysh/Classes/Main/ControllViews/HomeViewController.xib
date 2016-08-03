@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="homeCollView" destination="gGF-lI-kFh" id="yni-91-7AA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gGF-lI-kFh">
+                    <rect key="frame" x="0.0" y="24" width="320" height="427"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Djg-Rd-9qb">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CvG-WG-Aes"/>
+                        <outlet property="delegate" destination="-1" id="N3O-AZ-p3s"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add more FYSH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwQ-hN-PYN">
+                    <rect key="frame" x="103" y="531" width="115" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="P10-Te-SDb"/>
+                        <constraint firstAttribute="height" constant="21" id="W69-pe-DlN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn7-FW-zBV">
+                    <rect key="frame" x="136" y="475" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="BCf-DT-9yx"/>
+                        <constraint firstAttribute="height" constant="48" id="UQW-G3-wPA"/>
+                    </constraints>
+                    <state key="normal" image="add.png"/>
+                    <connections>
+                        <action selector="clickAddSevser:" destination="-1" eventType="touchUpInside" id="qYw-X2-OdI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gGF-lI-kFh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Sh-lW-U0P"/>
+                <constraint firstItem="YwQ-hN-PYN" firstAttribute="top" secondItem="pn7-FW-zBV" secondAttribute="bottom" constant="8" id="FZO-Ho-jGU"/>
+                <constraint firstAttribute="bottom" secondItem="YwQ-hN-PYN" secondAttribute="bottom" constant="16" id="Gql-wM-mud"/>
+                <constraint firstItem="pn7-FW-zBV" firstAttribute="centerX" secondItem="YwQ-hN-PYN" secondAttribute="centerX" id="L2L-RP-lzx"/>
+                <constraint firstItem="pn7-FW-zBV" firstAttribute="top" secondItem="gGF-lI-kFh" secondAttribute="bottom" constant="24" id="PvC-4z-IgS"/>
+                <constraint firstItem="gGF-lI-kFh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="QZH-xF-xBp"/>
+                <constraint firstItem="YwQ-hN-PYN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mcU-0p-UkD"/>
+                <constraint firstAttribute="trailing" secondItem="gGF-lI-kFh" secondAttribute="trailing" id="nq0-5t-IgF"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add.png" width="48" height="48"/>
+    </resources>
+</document>
